@@ -40,6 +40,7 @@
             this.btnLabelink = new System.Windows.Forms.Button();
             this.btnchkListBox = new System.Windows.Forms.Button();
             this.btnDateTimePicker = new System.Windows.Forms.Button();
+            this.btnMonthCalander = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowPart1
@@ -162,11 +163,22 @@
             this.btnDateTimePicker.UseVisualStyleBackColor = true;
             this.btnDateTimePicker.Click += new System.EventHandler(this.btnDateTimePicker_Click);
             // 
+            // btnMonthCalander
+            // 
+            this.btnMonthCalander.Location = new System.Drawing.Point(693, 139);
+            this.btnMonthCalander.Name = "btnMonthCalander";
+            this.btnMonthCalander.Size = new System.Drawing.Size(159, 75);
+            this.btnMonthCalander.TabIndex = 12;
+            this.btnMonthCalander.Text = "Month Calander";
+            this.btnMonthCalander.UseVisualStyleBackColor = true;
+            this.btnMonthCalander.Click += new System.EventHandler(this.btnMonthCalander_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(877, 562);
+            this.Controls.Add(this.btnMonthCalander);
             this.Controls.Add(this.btnDateTimePicker);
             this.Controls.Add(this.btnchkListBox);
             this.Controls.Add(this.btnLabelink);
@@ -200,5 +212,6 @@
         private System.Windows.Forms.Button btnLabelink;
         private System.Windows.Forms.Button btnchkListBox;
         private System.Windows.Forms.Button btnDateTimePicker;
+        private System.Windows.Forms.Button btnMonthCalander;
     }
 }

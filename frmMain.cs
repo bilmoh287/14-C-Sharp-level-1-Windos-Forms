@@ -93,5 +93,11 @@ namespace WindowsFormsApp1
             Form frm1 = new frmDateTimePicker();
             frm1.ShowDialog();
         }
+
+        private void btnMonthCalander_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmMonthCalander();
+            frm1.ShowDialog();
+        }
     }
 }
