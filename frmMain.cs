@@ -81,5 +81,11 @@ namespace WindowsFormsApp1
             Form frm1 = new frmlinkTabel();
             frm1.ShowDialog();
         }
+
+        private void btnchkListBox_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmCheckedLisBox();
+            frm1.ShowDialog();
+        }
     }
 }

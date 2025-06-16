@@ -38,6 +38,7 @@
             this.btnTicTacToeGame = new System.Windows.Forms.Button();
             this.btnMaskedBox = new System.Windows.Forms.Button();
             this.btnLabelink = new System.Windows.Forms.Button();
+            this.btnchkListBox = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowPart1
@@ -140,11 +141,22 @@
             this.btnLabelink.UseVisualStyleBackColor = true;
             this.btnLabelink.Click += new System.EventHandler(this.btnLabelink_Click);
             // 
+            // btnchkListBox
+            // 
+            this.btnchkListBox.Location = new System.Drawing.Point(497, 230);
+            this.btnchkListBox.Name = "btnchkListBox";
+            this.btnchkListBox.Size = new System.Drawing.Size(159, 75);
+            this.btnchkListBox.TabIndex = 10;
+            this.btnchkListBox.Text = "Checked Lis Box";
+            this.btnchkListBox.UseVisualStyleBackColor = true;
+            this.btnchkListBox.Click += new System.EventHandler(this.btnchkListBox_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 562);
+            this.Controls.Add(this.btnchkListBox);
             this.Controls.Add(this.btnLabelink);
             this.Controls.Add(this.btnMaskedBox);
             this.Controls.Add(this.btnTicTacToeGame);
@@ -174,5 +186,6 @@
         private System.Windows.Forms.Button btnTicTacToeGame;
         private System.Windows.Forms.Button btnMaskedBox;
         private System.Windows.Forms.Button btnLabelink;
+        private System.Windows.Forms.Button btnchkListBox;
     }
 }
