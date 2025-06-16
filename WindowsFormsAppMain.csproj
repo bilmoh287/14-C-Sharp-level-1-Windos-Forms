@@ -76,6 +76,12 @@
     <Compile Include="frmImageBoxExer.Designer.cs">
       <DependentUpon>frmImageBoxExer.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmlinkTabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlinkTabel.Designer.cs">
+      <DependentUpon>frmlinkTabel.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmImageBoxExer.resx">
       <DependentUpon>frmImageBoxExer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlinkTabel.resx">
+      <DependentUpon>frmlinkTabel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

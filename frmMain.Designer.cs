@@ -37,13 +37,14 @@
             this.btnImgBoxExer = new System.Windows.Forms.Button();
             this.btnTicTacToeGame = new System.Windows.Forms.Button();
             this.btnMaskedBox = new System.Windows.Forms.Button();
+            this.btnLabelink = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowPart1
             // 
             this.btnShowPart1.Location = new System.Drawing.Point(79, 35);
             this.btnShowPart1.Name = "btnShowPart1";
-            this.btnShowPart1.Size = new System.Drawing.Size(159, 105);
+            this.btnShowPart1.Size = new System.Drawing.Size(159, 75);
             this.btnShowPart1.TabIndex = 0;
             this.btnShowPart1.Text = "Show Form1";
             this.btnShowPart1.UseVisualStyleBackColor = true;
@@ -51,9 +52,9 @@
             // 
             // btnShowForm1Dialog
             // 
-            this.btnShowForm1Dialog.Location = new System.Drawing.Point(79, 146);
+            this.btnShowForm1Dialog.Location = new System.Drawing.Point(79, 128);
             this.btnShowForm1Dialog.Name = "btnShowForm1Dialog";
-            this.btnShowForm1Dialog.Size = new System.Drawing.Size(159, 105);
+            this.btnShowForm1Dialog.Size = new System.Drawing.Size(159, 75);
             this.btnShowForm1Dialog.TabIndex = 1;
             this.btnShowForm1Dialog.Text = "Show Form1 as Dialog";
             this.btnShowForm1Dialog.UseVisualStyleBackColor = true;
@@ -63,7 +64,7 @@
             // 
             this.btnShowMessageBox.Location = new System.Drawing.Point(288, 35);
             this.btnShowMessageBox.Name = "btnShowMessageBox";
-            this.btnShowMessageBox.Size = new System.Drawing.Size(159, 105);
+            this.btnShowMessageBox.Size = new System.Drawing.Size(159, 75);
             this.btnShowMessageBox.TabIndex = 2;
             this.btnShowMessageBox.Text = "Show MessageBox";
             this.btnShowMessageBox.UseVisualStyleBackColor = true;
@@ -83,7 +84,7 @@
             // 
             this.btMoreAbtTextBox.Location = new System.Drawing.Point(497, 35);
             this.btMoreAbtTextBox.Name = "btMoreAbtTextBox";
-            this.btMoreAbtTextBox.Size = new System.Drawing.Size(159, 105);
+            this.btMoreAbtTextBox.Size = new System.Drawing.Size(159, 75);
             this.btMoreAbtTextBox.TabIndex = 4;
             this.btMoreAbtTextBox.Text = "More About TextBox";
             this.btMoreAbtTextBox.UseVisualStyleBackColor = true;
@@ -91,9 +92,9 @@
             // 
             // btnImageBox
             // 
-            this.btnImageBox.Location = new System.Drawing.Point(497, 160);
+            this.btnImageBox.Location = new System.Drawing.Point(497, 128);
             this.btnImageBox.Name = "btnImageBox";
-            this.btnImageBox.Size = new System.Drawing.Size(159, 105);
+            this.btnImageBox.Size = new System.Drawing.Size(159, 75);
             this.btnImageBox.TabIndex = 5;
             this.btnImageBox.Text = "Image Box";
             this.btnImageBox.UseVisualStyleBackColor = true;
@@ -101,9 +102,9 @@
             // 
             // btnImgBoxExer
             // 
-            this.btnImgBoxExer.Location = new System.Drawing.Point(288, 160);
+            this.btnImgBoxExer.Location = new System.Drawing.Point(288, 128);
             this.btnImgBoxExer.Name = "btnImgBoxExer";
-            this.btnImgBoxExer.Size = new System.Drawing.Size(159, 105);
+            this.btnImgBoxExer.Size = new System.Drawing.Size(159, 75);
             this.btnImgBoxExer.TabIndex = 6;
             this.btnImgBoxExer.Text = "Image Box Exercise";
             this.btnImgBoxExer.UseVisualStyleBackColor = true;
@@ -121,19 +122,30 @@
             // 
             // btnMaskedBox
             // 
-            this.btnMaskedBox.Location = new System.Drawing.Point(79, 267);
+            this.btnMaskedBox.Location = new System.Drawing.Point(79, 230);
             this.btnMaskedBox.Name = "btnMaskedBox";
-            this.btnMaskedBox.Size = new System.Drawing.Size(159, 105);
+            this.btnMaskedBox.Size = new System.Drawing.Size(159, 75);
             this.btnMaskedBox.TabIndex = 8;
             this.btnMaskedBox.Text = "Masked TextBox and Combo Box";
             this.btnMaskedBox.UseVisualStyleBackColor = true;
             this.btnMaskedBox.Click += new System.EventHandler(this.btnMaskedBox_Click);
+            // 
+            // btnLabelink
+            // 
+            this.btnLabelink.Location = new System.Drawing.Point(288, 230);
+            this.btnLabelink.Name = "btnLabelink";
+            this.btnLabelink.Size = new System.Drawing.Size(159, 75);
+            this.btnLabelink.TabIndex = 9;
+            this.btnLabelink.Text = "label link";
+            this.btnLabelink.UseVisualStyleBackColor = true;
+            this.btnLabelink.Click += new System.EventHandler(this.btnLabelink_Click);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 562);
+            this.Controls.Add(this.btnLabelink);
             this.Controls.Add(this.btnMaskedBox);
             this.Controls.Add(this.btnTicTacToeGame);
             this.Controls.Add(this.btnImgBoxExer);
@@ -161,5 +173,6 @@
         private System.Windows.Forms.Button btnImgBoxExer;
         private System.Windows.Forms.Button btnTicTacToeGame;
         private System.Windows.Forms.Button btnMaskedBox;
+        private System.Windows.Forms.Button btnLabelink;
     }
 }

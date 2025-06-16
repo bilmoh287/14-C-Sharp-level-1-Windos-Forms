@@ -75,5 +75,11 @@ namespace WindowsFormsApp1
             Form frm1 = new frmMaskedBox();
             frm1.ShowDialog();
         }
+
+        private void btnLabelink_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmlinkTabel();
+            frm1.ShowDialog();
+        }
     }
 }
