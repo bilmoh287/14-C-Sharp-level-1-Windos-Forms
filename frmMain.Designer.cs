@@ -35,6 +35,8 @@
             this.btMoreAbtTextBox = new System.Windows.Forms.Button();
             this.btnImageBox = new System.Windows.Forms.Button();
             this.btnImgBoxExer = new System.Windows.Forms.Button();
+            this.btnTicTacToeGame = new System.Windows.Forms.Button();
+            this.btnMaskedBox = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowPart1
@@ -49,7 +51,7 @@
             // 
             // btnShowForm1Dialog
             // 
-            this.btnShowForm1Dialog.Location = new System.Drawing.Point(79, 189);
+            this.btnShowForm1Dialog.Location = new System.Drawing.Point(79, 146);
             this.btnShowForm1Dialog.Name = "btnShowForm1Dialog";
             this.btnShowForm1Dialog.Size = new System.Drawing.Size(159, 105);
             this.btnShowForm1Dialog.TabIndex = 1;
@@ -69,11 +71,11 @@
             // 
             // ChkBRadioGp
             // 
-            this.ChkBRadioGp.Location = new System.Drawing.Point(288, 189);
+            this.ChkBRadioGp.Location = new System.Drawing.Point(79, 404);
             this.ChkBRadioGp.Name = "ChkBRadioGp";
             this.ChkBRadioGp.Size = new System.Drawing.Size(159, 105);
             this.ChkBRadioGp.TabIndex = 3;
-            this.ChkBRadioGp.Text = "CheckBox/Radio/Group";
+            this.ChkBRadioGp.Text = "Pizza Order Project";
             this.ChkBRadioGp.UseVisualStyleBackColor = true;
             this.ChkBRadioGp.Click += new System.EventHandler(this.ChkBRadioGp_Click);
             // 
@@ -89,7 +91,7 @@
             // 
             // btnImageBox
             // 
-            this.btnImageBox.Location = new System.Drawing.Point(497, 175);
+            this.btnImageBox.Location = new System.Drawing.Point(497, 160);
             this.btnImageBox.Name = "btnImageBox";
             this.btnImageBox.Size = new System.Drawing.Size(159, 105);
             this.btnImageBox.TabIndex = 5;
@@ -99,7 +101,7 @@
             // 
             // btnImgBoxExer
             // 
-            this.btnImgBoxExer.Location = new System.Drawing.Point(497, 314);
+            this.btnImgBoxExer.Location = new System.Drawing.Point(288, 160);
             this.btnImgBoxExer.Name = "btnImgBoxExer";
             this.btnImgBoxExer.Size = new System.Drawing.Size(159, 105);
             this.btnImgBoxExer.TabIndex = 6;
@@ -107,11 +109,33 @@
             this.btnImgBoxExer.UseVisualStyleBackColor = true;
             this.btnImgBoxExer.Click += new System.EventHandler(this.btnImgBoxExer_Click);
             // 
+            // btnTicTacToeGame
+            // 
+            this.btnTicTacToeGame.Location = new System.Drawing.Point(288, 404);
+            this.btnTicTacToeGame.Name = "btnTicTacToeGame";
+            this.btnTicTacToeGame.Size = new System.Drawing.Size(159, 105);
+            this.btnTicTacToeGame.TabIndex = 7;
+            this.btnTicTacToeGame.Text = "Tic Tac Toe Game";
+            this.btnTicTacToeGame.UseVisualStyleBackColor = true;
+            this.btnTicTacToeGame.Click += new System.EventHandler(this.btnTicTacToeGame_Click);
+            // 
+            // btnMaskedBox
+            // 
+            this.btnMaskedBox.Location = new System.Drawing.Point(79, 267);
+            this.btnMaskedBox.Name = "btnMaskedBox";
+            this.btnMaskedBox.Size = new System.Drawing.Size(159, 105);
+            this.btnMaskedBox.TabIndex = 8;
+            this.btnMaskedBox.Text = "Masked TextBox and Combo Box";
+            this.btnMaskedBox.UseVisualStyleBackColor = true;
+            this.btnMaskedBox.Click += new System.EventHandler(this.btnMaskedBox_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(834, 562);
+            this.Controls.Add(this.btnMaskedBox);
+            this.Controls.Add(this.btnTicTacToeGame);
             this.Controls.Add(this.btnImgBoxExer);
             this.Controls.Add(this.btnImageBox);
             this.Controls.Add(this.btMoreAbtTextBox);
@@ -135,5 +159,7 @@
         private System.Windows.Forms.Button btMoreAbtTextBox;
         private System.Windows.Forms.Button btnImageBox;
         private System.Windows.Forms.Button btnImgBoxExer;
+        private System.Windows.Forms.Button btnTicTacToeGame;
+        private System.Windows.Forms.Button btnMaskedBox;
     }
 }

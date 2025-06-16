@@ -58,6 +58,12 @@
     <Compile Include="frmChkRadioGroup.Designer.cs">
       <DependentUpon>frmChkRadioGroup.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmComboBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmComboBox.Designer.cs">
+      <DependentUpon>frmComboBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmImageBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,12 @@
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaskedBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaskedBox.Designer.cs">
+      <DependentUpon>frmMaskedBox.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMessageBox.cs">
       <SubType>Form</SubType>
@@ -102,6 +114,9 @@
     <EmbeddedResource Include="frmChkRadioGroup.resx">
       <DependentUpon>frmChkRadioGroup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmComboBox.resx">
+      <DependentUpon>frmComboBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmImageBox.resx">
       <DependentUpon>frmImageBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaskedBox.resx">
+      <DependentUpon>frmMaskedBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMessageBox.resx">
       <DependentUpon>frmMessageBox.cs</DependentUpon>
