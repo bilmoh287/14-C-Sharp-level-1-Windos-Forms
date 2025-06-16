@@ -130,6 +130,12 @@
     <Compile Include="frmTicTacToeGame.Designer.cs">
       <DependentUpon>frmTicTacToeGame.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimer.Designer.cs">
+      <DependentUpon>frmTimer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTicTacToeGame.resx">
       <DependentUpon>frmTicTacToeGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimer.resx">
+      <DependentUpon>frmTimer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

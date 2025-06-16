@@ -41,6 +41,7 @@
             this.btnchkListBox = new System.Windows.Forms.Button();
             this.btnDateTimePicker = new System.Windows.Forms.Button();
             this.btnMonthCalander = new System.Windows.Forms.Button();
+            this.btnTimer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowPart1
@@ -173,11 +174,22 @@
             this.btnMonthCalander.UseVisualStyleBackColor = true;
             this.btnMonthCalander.Click += new System.EventHandler(this.btnMonthCalander_Click);
             // 
+            // btnTimer
+            // 
+            this.btnTimer.Location = new System.Drawing.Point(693, 230);
+            this.btnTimer.Name = "btnTimer";
+            this.btnTimer.Size = new System.Drawing.Size(159, 75);
+            this.btnTimer.TabIndex = 13;
+            this.btnTimer.Text = "Time";
+            this.btnTimer.UseVisualStyleBackColor = true;
+            this.btnTimer.Click += new System.EventHandler(this.btnTimer_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(877, 562);
+            this.Controls.Add(this.btnTimer);
             this.Controls.Add(this.btnMonthCalander);
             this.Controls.Add(this.btnDateTimePicker);
             this.Controls.Add(this.btnchkListBox);
@@ -213,5 +225,6 @@
         private System.Windows.Forms.Button btnchkListBox;
         private System.Windows.Forms.Button btnDateTimePicker;
         private System.Windows.Forms.Button btnMonthCalander;
+        private System.Windows.Forms.Button btnTimer;
     }
 }
