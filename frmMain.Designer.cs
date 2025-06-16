@@ -39,6 +39,7 @@
             this.btnMaskedBox = new System.Windows.Forms.Button();
             this.btnLabelink = new System.Windows.Forms.Button();
             this.btnchkListBox = new System.Windows.Forms.Button();
+            this.btnDateTimePicker = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowPart1
@@ -93,7 +94,7 @@
             // 
             // btnImageBox
             // 
-            this.btnImageBox.Location = new System.Drawing.Point(497, 128);
+            this.btnImageBox.Location = new System.Drawing.Point(497, 139);
             this.btnImageBox.Name = "btnImageBox";
             this.btnImageBox.Size = new System.Drawing.Size(159, 75);
             this.btnImageBox.TabIndex = 5;
@@ -151,11 +152,22 @@
             this.btnchkListBox.UseVisualStyleBackColor = true;
             this.btnchkListBox.Click += new System.EventHandler(this.btnchkListBox_Click);
             // 
+            // btnDateTimePicker
+            // 
+            this.btnDateTimePicker.Location = new System.Drawing.Point(693, 35);
+            this.btnDateTimePicker.Name = "btnDateTimePicker";
+            this.btnDateTimePicker.Size = new System.Drawing.Size(159, 75);
+            this.btnDateTimePicker.TabIndex = 11;
+            this.btnDateTimePicker.Text = "Date Time Picker";
+            this.btnDateTimePicker.UseVisualStyleBackColor = true;
+            this.btnDateTimePicker.Click += new System.EventHandler(this.btnDateTimePicker_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 562);
+            this.ClientSize = new System.Drawing.Size(877, 562);
+            this.Controls.Add(this.btnDateTimePicker);
             this.Controls.Add(this.btnchkListBox);
             this.Controls.Add(this.btnLabelink);
             this.Controls.Add(this.btnMaskedBox);
@@ -187,5 +199,6 @@
         private System.Windows.Forms.Button btnMaskedBox;
         private System.Windows.Forms.Button btnLabelink;
         private System.Windows.Forms.Button btnchkListBox;
+        private System.Windows.Forms.Button btnDateTimePicker;
     }
 }
