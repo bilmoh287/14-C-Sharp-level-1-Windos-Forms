@@ -59,11 +59,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnOrder = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gbCrust.SuspendLayout();
             this.gbPizzaSize.SuspendLayout();
             this.gbToppings.SuspendLayout();
             this.gbWhereToEat.SuspendLayout();
             this.gbOrderSummary.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnResetForm
@@ -115,15 +117,18 @@
             // 
             // gbPizzaSize
             // 
+            this.gbPizzaSize.BackColor = System.Drawing.Color.Transparent;
             this.gbPizzaSize.Controls.Add(this.rbLarge);
             this.gbPizzaSize.Controls.Add(this.rbMedium);
             this.gbPizzaSize.Controls.Add(this.rbSmall);
+            this.gbPizzaSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gbPizzaSize.Location = new System.Drawing.Point(58, 89);
             this.gbPizzaSize.Name = "gbPizzaSize";
             this.gbPizzaSize.Size = new System.Drawing.Size(179, 166);
             this.gbPizzaSize.TabIndex = 7;
             this.gbPizzaSize.TabStop = false;
-            this.gbPizzaSize.Text = "Pizza Size";
+            this.gbPizzaSize.Text = "Size";
+            this.gbPizzaSize.Enter += new System.EventHandler(this.gbPizzaSize_Enter);
             // 
             // rbLarge
             // 
@@ -167,6 +172,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Showcard Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(234, 27);
@@ -301,6 +307,7 @@
             // 
             // gbOrderSummary
             // 
+            this.gbOrderSummary.BackColor = System.Drawing.Color.Transparent;
             this.gbOrderSummary.Controls.Add(this.lblTotalPrice);
             this.gbOrderSummary.Controls.Add(this.lblWhereToEat);
             this.gbOrderSummary.Controls.Add(this.lblCrustType);
@@ -425,19 +432,32 @@
             this.btnOrder.UseVisualStyleBackColor = true;
             this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.Pizza3;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1225, 641);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // frmChkRadioGroup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1225, 641);
-            this.Controls.Add(this.btnOrder);
             this.Controls.Add(this.gbOrderSummary);
+            this.Controls.Add(this.btnOrder);
             this.Controls.Add(this.gbWhereToEat);
             this.Controls.Add(this.gbToppings);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gbPizzaSize);
             this.Controls.Add(this.gbCrust);
             this.Controls.Add(this.btnResetForm);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "frmChkRadioGroup";
             this.Text = "frmChkRadioGroup";
             this.Load += new System.EventHandler(this.frmChkRadioGroup_Load);
@@ -451,6 +471,7 @@
             this.gbWhereToEat.PerformLayout();
             this.gbOrderSummary.ResumeLayout(false);
             this.gbOrderSummary.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -488,5 +509,6 @@
         private System.Windows.Forms.Label lblToppings;
         private System.Windows.Forms.Label lblSize;
         private System.Windows.Forms.Button btnOrder;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -15,6 +15,7 @@ namespace WindowsFormsApp1
         public frmChkRadioGroup()
         {
             InitializeComponent();
+
         }
 
         void UpdateSize()
@@ -340,6 +341,7 @@ namespace WindowsFormsApp1
 
         private void frmChkRadioGroup_Load(object sender, EventArgs e)
         {
+            gbPizzaSize.BackColor = Color.FromArgb(100, Color.White); // 100 = transparency
             ResetFrorm();
         }
 
@@ -349,6 +351,16 @@ namespace WindowsFormsApp1
         }
 
         private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbPizzaSize_Enter(object sender, EventArgs e)
         {
 
         }
