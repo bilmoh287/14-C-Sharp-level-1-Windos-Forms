@@ -42,6 +42,7 @@
             this.btnDateTimePicker = new System.Windows.Forms.Button();
             this.btnMonthCalander = new System.Windows.Forms.Button();
             this.btnTimer = new System.Windows.Forms.Button();
+            this.btnNotifyIcon = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowPart1
@@ -184,11 +185,22 @@
             this.btnTimer.UseVisualStyleBackColor = true;
             this.btnTimer.Click += new System.EventHandler(this.btnTimer_Click);
             // 
+            // btnNotifyIcon
+            // 
+            this.btnNotifyIcon.Location = new System.Drawing.Point(869, 35);
+            this.btnNotifyIcon.Name = "btnNotifyIcon";
+            this.btnNotifyIcon.Size = new System.Drawing.Size(159, 75);
+            this.btnNotifyIcon.TabIndex = 14;
+            this.btnNotifyIcon.Text = "Notify Icon";
+            this.btnNotifyIcon.UseVisualStyleBackColor = true;
+            this.btnNotifyIcon.Click += new System.EventHandler(this.btnNotifyIcon_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(877, 562);
+            this.ClientSize = new System.Drawing.Size(1056, 562);
+            this.Controls.Add(this.btnNotifyIcon);
             this.Controls.Add(this.btnTimer);
             this.Controls.Add(this.btnMonthCalander);
             this.Controls.Add(this.btnDateTimePicker);
@@ -226,5 +238,6 @@
         private System.Windows.Forms.Button btnDateTimePicker;
         private System.Windows.Forms.Button btnMonthCalander;
         private System.Windows.Forms.Button btnTimer;
+        private System.Windows.Forms.Button btnNotifyIcon;
     }
 }
