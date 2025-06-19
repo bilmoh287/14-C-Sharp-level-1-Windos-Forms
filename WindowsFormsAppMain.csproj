@@ -130,6 +130,12 @@
     <Compile Include="frmNotifyIcon.Designer.cs">
       <DependentUpon>frmNotifyIcon.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgressBar.Designer.cs">
+      <DependentUpon>frmProgressBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTicTacToeGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNotifyIcon.resx">
       <DependentUpon>frmNotifyIcon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgressBar.resx">
+      <DependentUpon>frmProgressBar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTicTacToeGame.resx">
       <DependentUpon>frmTicTacToeGame.cs</DependentUpon>

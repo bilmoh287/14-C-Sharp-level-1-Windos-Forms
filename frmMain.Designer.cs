@@ -43,6 +43,7 @@
             this.btnMonthCalander = new System.Windows.Forms.Button();
             this.btnTimer = new System.Windows.Forms.Button();
             this.btnNotifyIcon = new System.Windows.Forms.Button();
+            this.btnProgressBar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowPart1
@@ -195,11 +196,22 @@
             this.btnNotifyIcon.UseVisualStyleBackColor = true;
             this.btnNotifyIcon.Click += new System.EventHandler(this.btnNotifyIcon_Click);
             // 
+            // btnProgressBar
+            // 
+            this.btnProgressBar.Location = new System.Drawing.Point(869, 139);
+            this.btnProgressBar.Name = "btnProgressBar";
+            this.btnProgressBar.Size = new System.Drawing.Size(159, 75);
+            this.btnProgressBar.TabIndex = 15;
+            this.btnProgressBar.Text = "Progress Bar";
+            this.btnProgressBar.UseVisualStyleBackColor = true;
+            this.btnProgressBar.Click += new System.EventHandler(this.btnProgressBar_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1056, 562);
+            this.Controls.Add(this.btnProgressBar);
             this.Controls.Add(this.btnNotifyIcon);
             this.Controls.Add(this.btnTimer);
             this.Controls.Add(this.btnMonthCalander);
@@ -239,5 +251,6 @@
         private System.Windows.Forms.Button btnMonthCalander;
         private System.Windows.Forms.Button btnTimer;
         private System.Windows.Forms.Button btnNotifyIcon;
+        private System.Windows.Forms.Button btnProgressBar;
     }
 }

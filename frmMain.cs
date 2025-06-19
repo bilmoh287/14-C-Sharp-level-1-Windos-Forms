@@ -111,5 +111,11 @@ namespace WindowsFormsApp1
             Form frm1 = new frmNotifyIcon();
             frm1.ShowDialog();
         }
+
+        private void btnProgressBar_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmProgressBar();
+            frm1.ShowDialog();
+        }
     }
 }
