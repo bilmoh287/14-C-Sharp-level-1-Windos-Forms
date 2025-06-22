@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Pray");
-            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("Programming");
-            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("Zikr");
-            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("Quran");
-            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("Work");
+            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("Pray");
+            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("Programming");
+            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("Zikr");
+            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("Quran");
+            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("Work");
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -47,22 +47,22 @@
             this.treeView1.CheckBoxes = true;
             this.treeView1.Location = new System.Drawing.Point(22, 59);
             this.treeView1.Name = "treeView1";
-            treeNode36.Name = "Pray";
-            treeNode36.Text = "Pray";
-            treeNode37.Name = "Programming";
-            treeNode37.Text = "Programming";
-            treeNode38.Name = "Zikr";
-            treeNode38.Text = "Zikr";
-            treeNode39.Name = "Quran";
-            treeNode39.Text = "Quran";
-            treeNode40.Name = "Work";
-            treeNode40.Text = "Work";
+            treeNode41.Name = "Pray";
+            treeNode41.Text = "Pray";
+            treeNode42.Name = "Programming";
+            treeNode42.Text = "Programming";
+            treeNode43.Name = "Zikr";
+            treeNode43.Text = "Zikr";
+            treeNode44.Name = "Quran";
+            treeNode44.Text = "Quran";
+            treeNode45.Name = "Work";
+            treeNode45.Text = "Work";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode36,
-            treeNode37,
-            treeNode38,
-            treeNode39,
-            treeNode40});
+            treeNode41,
+            treeNode42,
+            treeNode43,
+            treeNode44,
+            treeNode45});
             this.treeView1.Size = new System.Drawing.Size(317, 286);
             this.treeView1.TabIndex = 0;
             // 
@@ -118,7 +118,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(571, 321);
+            this.comboBox1.Location = new System.Drawing.Point(549, 321);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 6;

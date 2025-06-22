@@ -117,5 +117,11 @@ namespace WindowsFormsApp1
             Form frm1 = new frmProgressBar();
             frm1.ShowDialog();
         }
+
+        private void btnListView_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmListView();
+            frm1.ShowDialog();
+        }
     }
 }
