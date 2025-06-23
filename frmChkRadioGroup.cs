@@ -180,12 +180,13 @@ namespace WindowsFormsApp1
 
         float CalculateTotalPrice()
         {
-            return GetSelectedSizePrice() + CalculateToppingsPrice() + GetCrustTypePrice() + GetWhereToEatPrice();
+            return (GetSelectedSizePrice() + CalculateToppingsPrice() + GetCrustTypePrice() + 
+                GetWhereToEatPrice()) * Convert.ToSingle(numericUpDown1.Value);
         }
 
         void UpdateTotalPrice()
         {
-            lblTotalPrice.Font = new Font("Segoe UI", 14, FontStyle.Bold);
+            lblTotalPrice.Font = new Font("Segoe UI", 22, FontStyle.Bold);
             lblTotalPrice.Text = "$" + CalculateTotalPrice().ToString();
 
         }
@@ -363,6 +364,11 @@ namespace WindowsFormsApp1
         private void gbPizzaSize_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            UpdateTotalPrice();
         }
     }
 }

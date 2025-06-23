@@ -60,17 +60,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnOrder = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label7 = new System.Windows.Forms.Label();
             this.gbCrust.SuspendLayout();
             this.gbPizzaSize.SuspendLayout();
             this.gbToppings.SuspendLayout();
             this.gbWhereToEat.SuspendLayout();
             this.gbOrderSummary.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnResetForm
             // 
-            this.btnResetForm.Location = new System.Drawing.Point(468, 447);
+            this.btnResetForm.Location = new System.Drawing.Point(453, 444);
             this.btnResetForm.Name = "btnResetForm";
             this.btnResetForm.Size = new System.Drawing.Size(117, 44);
             this.btnResetForm.TabIndex = 5;
@@ -82,7 +85,7 @@
             // 
             this.gbCrust.Controls.Add(this.rbThik);
             this.gbCrust.Controls.Add(this.rbThin);
-            this.gbCrust.Location = new System.Drawing.Point(58, 281);
+            this.gbCrust.Location = new System.Drawing.Point(58, 254);
             this.gbCrust.Name = "gbCrust";
             this.gbCrust.Size = new System.Drawing.Size(179, 166);
             this.gbCrust.TabIndex = 6;
@@ -122,7 +125,7 @@
             this.gbPizzaSize.Controls.Add(this.rbMedium);
             this.gbPizzaSize.Controls.Add(this.rbSmall);
             this.gbPizzaSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gbPizzaSize.Location = new System.Drawing.Point(58, 89);
+            this.gbPizzaSize.Location = new System.Drawing.Point(58, 72);
             this.gbPizzaSize.Name = "gbPizzaSize";
             this.gbPizzaSize.Size = new System.Drawing.Size(179, 166);
             this.gbPizzaSize.TabIndex = 7;
@@ -175,7 +178,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Showcard Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(234, 27);
+            this.label1.Location = new System.Drawing.Point(253, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(454, 59);
             this.label1.TabIndex = 8;
@@ -189,7 +192,7 @@
             this.gbToppings.Controls.Add(this.chkTomatoes);
             this.gbToppings.Controls.Add(this.chkMushrooms);
             this.gbToppings.Controls.Add(this.chkExtraCheese);
-            this.gbToppings.Location = new System.Drawing.Point(259, 97);
+            this.gbToppings.Location = new System.Drawing.Point(263, 80);
             this.gbToppings.Name = "gbToppings";
             this.gbToppings.Size = new System.Drawing.Size(307, 158);
             this.gbToppings.TabIndex = 9;
@@ -272,7 +275,7 @@
             // 
             this.gbWhereToEat.Controls.Add(this.rbTakeOut);
             this.gbWhereToEat.Controls.Add(this.rbTakeIn);
-            this.gbWhereToEat.Location = new System.Drawing.Point(263, 275);
+            this.gbWhereToEat.Location = new System.Drawing.Point(263, 270);
             this.gbWhereToEat.Name = "gbWhereToEat";
             this.gbWhereToEat.Size = new System.Drawing.Size(216, 99);
             this.gbWhereToEat.TabIndex = 10;
@@ -318,7 +321,7 @@
             this.gbOrderSummary.Controls.Add(this.label4);
             this.gbOrderSummary.Controls.Add(this.label3);
             this.gbOrderSummary.Controls.Add(this.label2);
-            this.gbOrderSummary.Location = new System.Drawing.Point(583, 111);
+            this.gbOrderSummary.Location = new System.Drawing.Point(588, 80);
             this.gbOrderSummary.Name = "gbOrderSummary";
             this.gbOrderSummary.Size = new System.Drawing.Size(390, 330);
             this.gbOrderSummary.TabIndex = 11;
@@ -424,7 +427,7 @@
             // 
             // btnOrder
             // 
-            this.btnOrder.Location = new System.Drawing.Point(335, 447);
+            this.btnOrder.Location = new System.Drawing.Point(271, 444);
             this.btnOrder.Name = "btnOrder";
             this.btnOrder.Size = new System.Drawing.Size(117, 44);
             this.btnOrder.TabIndex = 12;
@@ -438,17 +441,38 @@
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.Pizza3;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1225, 641);
+            this.pictureBox1.Size = new System.Drawing.Size(1036, 523);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown1.Location = new System.Drawing.Point(90, 477);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 34);
+            this.numericUpDown1.TabIndex = 14;
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(98, 444);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(106, 25);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Order Size";
+            // 
             // frmChkRadioGroup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1225, 641);
+            this.ClientSize = new System.Drawing.Size(1036, 523);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.gbOrderSummary);
             this.Controls.Add(this.btnOrder);
             this.Controls.Add(this.gbWhereToEat);
@@ -472,6 +496,7 @@
             this.gbOrderSummary.ResumeLayout(false);
             this.gbOrderSummary.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -510,5 +535,7 @@
         private System.Windows.Forms.Label lblSize;
         private System.Windows.Forms.Button btnOrder;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label7;
     }
 }
