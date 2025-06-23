@@ -45,13 +45,14 @@
             this.btnNotifyIcon = new System.Windows.Forms.Button();
             this.btnProgressBar = new System.Windows.Forms.Button();
             this.btnListView = new System.Windows.Forms.Button();
+            this.btnErrorProvider = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowPart1
             // 
-            this.btnShowPart1.Location = new System.Drawing.Point(79, 35);
+            this.btnShowPart1.Location = new System.Drawing.Point(27, 25);
             this.btnShowPart1.Name = "btnShowPart1";
-            this.btnShowPart1.Size = new System.Drawing.Size(159, 75);
+            this.btnShowPart1.Size = new System.Drawing.Size(124, 61);
             this.btnShowPart1.TabIndex = 0;
             this.btnShowPart1.Text = "Show Form1";
             this.btnShowPart1.UseVisualStyleBackColor = true;
@@ -59,9 +60,9 @@
             // 
             // btnShowForm1Dialog
             // 
-            this.btnShowForm1Dialog.Location = new System.Drawing.Point(79, 128);
+            this.btnShowForm1Dialog.Location = new System.Drawing.Point(27, 92);
             this.btnShowForm1Dialog.Name = "btnShowForm1Dialog";
-            this.btnShowForm1Dialog.Size = new System.Drawing.Size(159, 75);
+            this.btnShowForm1Dialog.Size = new System.Drawing.Size(124, 61);
             this.btnShowForm1Dialog.TabIndex = 1;
             this.btnShowForm1Dialog.Text = "Show Form1 as Dialog";
             this.btnShowForm1Dialog.UseVisualStyleBackColor = true;
@@ -69,9 +70,9 @@
             // 
             // btnShowMessageBox
             // 
-            this.btnShowMessageBox.Location = new System.Drawing.Point(288, 35);
+            this.btnShowMessageBox.Location = new System.Drawing.Point(157, 25);
             this.btnShowMessageBox.Name = "btnShowMessageBox";
-            this.btnShowMessageBox.Size = new System.Drawing.Size(159, 75);
+            this.btnShowMessageBox.Size = new System.Drawing.Size(124, 61);
             this.btnShowMessageBox.TabIndex = 2;
             this.btnShowMessageBox.Text = "Show MessageBox";
             this.btnShowMessageBox.UseVisualStyleBackColor = true;
@@ -89,9 +90,9 @@
             // 
             // btMoreAbtTextBox
             // 
-            this.btMoreAbtTextBox.Location = new System.Drawing.Point(497, 35);
+            this.btMoreAbtTextBox.Location = new System.Drawing.Point(288, 25);
             this.btMoreAbtTextBox.Name = "btMoreAbtTextBox";
-            this.btMoreAbtTextBox.Size = new System.Drawing.Size(159, 75);
+            this.btMoreAbtTextBox.Size = new System.Drawing.Size(124, 61);
             this.btMoreAbtTextBox.TabIndex = 4;
             this.btMoreAbtTextBox.Text = "More About TextBox";
             this.btMoreAbtTextBox.UseVisualStyleBackColor = true;
@@ -99,9 +100,9 @@
             // 
             // btnImageBox
             // 
-            this.btnImageBox.Location = new System.Drawing.Point(497, 139);
+            this.btnImageBox.Location = new System.Drawing.Point(288, 92);
             this.btnImageBox.Name = "btnImageBox";
-            this.btnImageBox.Size = new System.Drawing.Size(159, 75);
+            this.btnImageBox.Size = new System.Drawing.Size(124, 61);
             this.btnImageBox.TabIndex = 5;
             this.btnImageBox.Text = "Image Box";
             this.btnImageBox.UseVisualStyleBackColor = true;
@@ -109,9 +110,9 @@
             // 
             // btnImgBoxExer
             // 
-            this.btnImgBoxExer.Location = new System.Drawing.Point(288, 128);
+            this.btnImgBoxExer.Location = new System.Drawing.Point(157, 92);
             this.btnImgBoxExer.Name = "btnImgBoxExer";
-            this.btnImgBoxExer.Size = new System.Drawing.Size(159, 75);
+            this.btnImgBoxExer.Size = new System.Drawing.Size(124, 61);
             this.btnImgBoxExer.TabIndex = 6;
             this.btnImgBoxExer.Text = "Image Box Exercise";
             this.btnImgBoxExer.UseVisualStyleBackColor = true;
@@ -129,9 +130,9 @@
             // 
             // btnMaskedBox
             // 
-            this.btnMaskedBox.Location = new System.Drawing.Point(79, 230);
+            this.btnMaskedBox.Location = new System.Drawing.Point(27, 159);
             this.btnMaskedBox.Name = "btnMaskedBox";
-            this.btnMaskedBox.Size = new System.Drawing.Size(159, 75);
+            this.btnMaskedBox.Size = new System.Drawing.Size(124, 61);
             this.btnMaskedBox.TabIndex = 8;
             this.btnMaskedBox.Text = "Masked TextBox and Combo Box";
             this.btnMaskedBox.UseVisualStyleBackColor = true;
@@ -139,9 +140,9 @@
             // 
             // btnLabelink
             // 
-            this.btnLabelink.Location = new System.Drawing.Point(288, 230);
+            this.btnLabelink.Location = new System.Drawing.Point(157, 159);
             this.btnLabelink.Name = "btnLabelink";
-            this.btnLabelink.Size = new System.Drawing.Size(159, 75);
+            this.btnLabelink.Size = new System.Drawing.Size(124, 61);
             this.btnLabelink.TabIndex = 9;
             this.btnLabelink.Text = "label link";
             this.btnLabelink.UseVisualStyleBackColor = true;
@@ -149,9 +150,9 @@
             // 
             // btnchkListBox
             // 
-            this.btnchkListBox.Location = new System.Drawing.Point(497, 230);
+            this.btnchkListBox.Location = new System.Drawing.Point(287, 159);
             this.btnchkListBox.Name = "btnchkListBox";
-            this.btnchkListBox.Size = new System.Drawing.Size(159, 75);
+            this.btnchkListBox.Size = new System.Drawing.Size(124, 61);
             this.btnchkListBox.TabIndex = 10;
             this.btnchkListBox.Text = "Checked Lis Box";
             this.btnchkListBox.UseVisualStyleBackColor = true;
@@ -159,9 +160,9 @@
             // 
             // btnDateTimePicker
             // 
-            this.btnDateTimePicker.Location = new System.Drawing.Point(693, 35);
+            this.btnDateTimePicker.Location = new System.Drawing.Point(418, 25);
             this.btnDateTimePicker.Name = "btnDateTimePicker";
-            this.btnDateTimePicker.Size = new System.Drawing.Size(159, 75);
+            this.btnDateTimePicker.Size = new System.Drawing.Size(124, 61);
             this.btnDateTimePicker.TabIndex = 11;
             this.btnDateTimePicker.Text = "Date Time Picker";
             this.btnDateTimePicker.UseVisualStyleBackColor = true;
@@ -169,9 +170,9 @@
             // 
             // btnMonthCalander
             // 
-            this.btnMonthCalander.Location = new System.Drawing.Point(693, 139);
+            this.btnMonthCalander.Location = new System.Drawing.Point(418, 92);
             this.btnMonthCalander.Name = "btnMonthCalander";
-            this.btnMonthCalander.Size = new System.Drawing.Size(159, 75);
+            this.btnMonthCalander.Size = new System.Drawing.Size(124, 61);
             this.btnMonthCalander.TabIndex = 12;
             this.btnMonthCalander.Text = "Month Calander";
             this.btnMonthCalander.UseVisualStyleBackColor = true;
@@ -179,9 +180,9 @@
             // 
             // btnTimer
             // 
-            this.btnTimer.Location = new System.Drawing.Point(693, 230);
+            this.btnTimer.Location = new System.Drawing.Point(418, 159);
             this.btnTimer.Name = "btnTimer";
-            this.btnTimer.Size = new System.Drawing.Size(159, 75);
+            this.btnTimer.Size = new System.Drawing.Size(124, 61);
             this.btnTimer.TabIndex = 13;
             this.btnTimer.Text = "Time";
             this.btnTimer.UseVisualStyleBackColor = true;
@@ -189,9 +190,9 @@
             // 
             // btnNotifyIcon
             // 
-            this.btnNotifyIcon.Location = new System.Drawing.Point(869, 35);
+            this.btnNotifyIcon.Location = new System.Drawing.Point(548, 25);
             this.btnNotifyIcon.Name = "btnNotifyIcon";
-            this.btnNotifyIcon.Size = new System.Drawing.Size(159, 75);
+            this.btnNotifyIcon.Size = new System.Drawing.Size(124, 61);
             this.btnNotifyIcon.TabIndex = 14;
             this.btnNotifyIcon.Text = "Notify Icon";
             this.btnNotifyIcon.UseVisualStyleBackColor = true;
@@ -199,9 +200,9 @@
             // 
             // btnProgressBar
             // 
-            this.btnProgressBar.Location = new System.Drawing.Point(869, 139);
+            this.btnProgressBar.Location = new System.Drawing.Point(548, 92);
             this.btnProgressBar.Name = "btnProgressBar";
-            this.btnProgressBar.Size = new System.Drawing.Size(159, 75);
+            this.btnProgressBar.Size = new System.Drawing.Size(124, 61);
             this.btnProgressBar.TabIndex = 15;
             this.btnProgressBar.Text = "Progress Bar";
             this.btnProgressBar.UseVisualStyleBackColor = true;
@@ -209,19 +210,30 @@
             // 
             // btnListView
             // 
-            this.btnListView.Location = new System.Drawing.Point(869, 230);
+            this.btnListView.Location = new System.Drawing.Point(548, 159);
             this.btnListView.Name = "btnListView";
-            this.btnListView.Size = new System.Drawing.Size(159, 75);
+            this.btnListView.Size = new System.Drawing.Size(124, 61);
             this.btnListView.TabIndex = 16;
             this.btnListView.Text = "List View";
             this.btnListView.UseVisualStyleBackColor = true;
             this.btnListView.Click += new System.EventHandler(this.btnListView_Click);
+            // 
+            // btnErrorProvider
+            // 
+            this.btnErrorProvider.Location = new System.Drawing.Point(678, 25);
+            this.btnErrorProvider.Name = "btnErrorProvider";
+            this.btnErrorProvider.Size = new System.Drawing.Size(124, 61);
+            this.btnErrorProvider.TabIndex = 17;
+            this.btnErrorProvider.Text = "Error Provider";
+            this.btnErrorProvider.UseVisualStyleBackColor = true;
+            this.btnErrorProvider.Click += new System.EventHandler(this.btnErrorProvider_Click);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1056, 562);
+            this.Controls.Add(this.btnErrorProvider);
             this.Controls.Add(this.btnListView);
             this.Controls.Add(this.btnProgressBar);
             this.Controls.Add(this.btnNotifyIcon);
@@ -265,5 +277,6 @@
         private System.Windows.Forms.Button btnNotifyIcon;
         private System.Windows.Forms.Button btnProgressBar;
         private System.Windows.Forms.Button btnListView;
+        private System.Windows.Forms.Button btnErrorProvider;
     }
 }

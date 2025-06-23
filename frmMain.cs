@@ -123,5 +123,11 @@ namespace WindowsFormsApp1
             Form frm1 = new frmListView();
             frm1.ShowDialog();
         }
+
+        private void btnErrorProvider_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmErrorProvider();
+            frm1.ShowDialog();
+        }
     }
 }
