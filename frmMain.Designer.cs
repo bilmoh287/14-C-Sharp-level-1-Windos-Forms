@@ -47,6 +47,7 @@
             this.btnListView = new System.Windows.Forms.Button();
             this.btnErrorProvider = new System.Windows.Forms.Button();
             this.btnTrackBar = new System.Windows.Forms.Button();
+            this.btnNumeric = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowPart1
@@ -239,11 +240,22 @@
             this.btnTrackBar.UseVisualStyleBackColor = true;
             this.btnTrackBar.Click += new System.EventHandler(this.btnTrackBar_Click);
             // 
+            // btnNumeric
+            // 
+            this.btnNumeric.Location = new System.Drawing.Point(678, 159);
+            this.btnNumeric.Name = "btnNumeric";
+            this.btnNumeric.Size = new System.Drawing.Size(124, 61);
+            this.btnNumeric.TabIndex = 19;
+            this.btnNumeric.Text = "Numeric UpDown";
+            this.btnNumeric.UseVisualStyleBackColor = true;
+            this.btnNumeric.Click += new System.EventHandler(this.btnNumeric_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1056, 562);
+            this.Controls.Add(this.btnNumeric);
             this.Controls.Add(this.btnTrackBar);
             this.Controls.Add(this.btnErrorProvider);
             this.Controls.Add(this.btnListView);
@@ -291,5 +303,6 @@
         private System.Windows.Forms.Button btnListView;
         private System.Windows.Forms.Button btnErrorProvider;
         private System.Windows.Forms.Button btnTrackBar;
+        private System.Windows.Forms.Button btnNumeric;
     }
 }

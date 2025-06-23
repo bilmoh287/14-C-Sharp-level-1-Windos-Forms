@@ -135,5 +135,11 @@ namespace WindowsFormsApp1
             Form frm1 = new frmTrackBar();
             frm1.ShowDialog();
         }
+
+        private void btnNumeric_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmNumericUpDown();
+            frm1.ShowDialog();
+        }
     }
 }
