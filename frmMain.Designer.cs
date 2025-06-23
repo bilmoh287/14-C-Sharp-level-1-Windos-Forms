@@ -46,6 +46,7 @@
             this.btnProgressBar = new System.Windows.Forms.Button();
             this.btnListView = new System.Windows.Forms.Button();
             this.btnErrorProvider = new System.Windows.Forms.Button();
+            this.btnTrackBar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowPart1
@@ -228,11 +229,22 @@
             this.btnErrorProvider.UseVisualStyleBackColor = true;
             this.btnErrorProvider.Click += new System.EventHandler(this.btnErrorProvider_Click);
             // 
+            // btnTrackBar
+            // 
+            this.btnTrackBar.Location = new System.Drawing.Point(678, 92);
+            this.btnTrackBar.Name = "btnTrackBar";
+            this.btnTrackBar.Size = new System.Drawing.Size(124, 61);
+            this.btnTrackBar.TabIndex = 18;
+            this.btnTrackBar.Text = "Track Bar";
+            this.btnTrackBar.UseVisualStyleBackColor = true;
+            this.btnTrackBar.Click += new System.EventHandler(this.btnTrackBar_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1056, 562);
+            this.Controls.Add(this.btnTrackBar);
             this.Controls.Add(this.btnErrorProvider);
             this.Controls.Add(this.btnListView);
             this.Controls.Add(this.btnProgressBar);
@@ -278,5 +290,6 @@
         private System.Windows.Forms.Button btnProgressBar;
         private System.Windows.Forms.Button btnListView;
         private System.Windows.Forms.Button btnErrorProvider;
+        private System.Windows.Forms.Button btnTrackBar;
     }
 }

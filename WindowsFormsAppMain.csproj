@@ -160,6 +160,12 @@
     <Compile Include="frmTimer.Designer.cs">
       <DependentUpon>frmTimer.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTrackBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrackBar.Designer.cs">
+      <DependentUpon>frmTrackBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTreeView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTimer.resx">
       <DependentUpon>frmTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrackBar.resx">
+      <DependentUpon>frmTrackBar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTreeView.resx">
       <DependentUpon>frmTreeView.cs</DependentUpon>
