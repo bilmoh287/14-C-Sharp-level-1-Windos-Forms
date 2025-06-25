@@ -154,6 +154,12 @@
     <Compile Include="frmProgressBar.Designer.cs">
       <DependentUpon>frmProgressBar.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTabControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTabControl.Designer.cs">
+      <DependentUpon>frmTabControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTicTacToeGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,6 +240,9 @@
     <EmbeddedResource Include="frmProgressBar.resx">
       <DependentUpon>frmProgressBar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmTabControl.resx">
+      <DependentUpon>frmTabControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTicTacToeGame.resx">
       <DependentUpon>frmTicTacToeGame.cs</DependentUpon>
     </EmbeddedResource>
@@ -301,6 +310,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Pizza3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Employee MgSys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Employee MgSys2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Employee MgSys3.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
