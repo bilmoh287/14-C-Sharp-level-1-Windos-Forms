@@ -147,5 +147,11 @@ namespace WindowsFormsApp1
             Form frm1 = new frmEmployeeManagementSystem();
             frm1.ShowDialog();
         }
+
+        private void btnPanelandColorDialog_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmPanelAndColorDialog();
+            frm1.ShowDialog();
+        }
     }
 }

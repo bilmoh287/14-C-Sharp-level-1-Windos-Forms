@@ -49,6 +49,7 @@
             this.btnTrackBar = new System.Windows.Forms.Button();
             this.btnNumeric = new System.Windows.Forms.Button();
             this.btnEmpMgSys = new System.Windows.Forms.Button();
+            this.btnPanelandColorDialog = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowPart1
@@ -261,11 +262,22 @@
             this.btnEmpMgSys.UseVisualStyleBackColor = true;
             this.btnEmpMgSys.Click += new System.EventHandler(this.btnEmpMgSys_Click);
             // 
+            // btnPanelandColorDialog
+            // 
+            this.btnPanelandColorDialog.Location = new System.Drawing.Point(808, 25);
+            this.btnPanelandColorDialog.Name = "btnPanelandColorDialog";
+            this.btnPanelandColorDialog.Size = new System.Drawing.Size(124, 61);
+            this.btnPanelandColorDialog.TabIndex = 21;
+            this.btnPanelandColorDialog.Text = "Panel and Color Dialog";
+            this.btnPanelandColorDialog.UseVisualStyleBackColor = true;
+            this.btnPanelandColorDialog.Click += new System.EventHandler(this.btnPanelandColorDialog_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1056, 562);
+            this.Controls.Add(this.btnPanelandColorDialog);
             this.Controls.Add(this.btnEmpMgSys);
             this.Controls.Add(this.btnNumeric);
             this.Controls.Add(this.btnTrackBar);
@@ -317,5 +329,6 @@
         private System.Windows.Forms.Button btnTrackBar;
         private System.Windows.Forms.Button btnNumeric;
         private System.Windows.Forms.Button btnEmpMgSys;
+        private System.Windows.Forms.Button btnPanelandColorDialog;
     }
 }
