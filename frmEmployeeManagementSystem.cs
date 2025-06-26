@@ -204,12 +204,12 @@ namespace WindowsFormsApp1
 
         private void btnList_CheckedChanged(object sender, EventArgs e)
         {
-            listView1.View = View.LargeIcon;
+            listView1.View = View.List;
         }
 
         private void btnLargeIcon_CheckedChanged(object sender, EventArgs e)
         {
-            listView1.View = View.List;
+            listView1.View = View.LargeIcon;
         }
 
         private void btnFillRandom_Click(object sender, EventArgs e)
