@@ -39,6 +39,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.btnSaveFileDialog = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -113,7 +115,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(812, 219);
+            this.button3.Location = new System.Drawing.Point(783, 180);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(140, 65);
             this.button3.TabIndex = 3;
@@ -123,7 +125,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(812, 322);
+            this.button4.Location = new System.Drawing.Point(792, 283);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(140, 65);
             this.button4.TabIndex = 4;
@@ -135,11 +137,22 @@
             // 
             this.fontDialog1.Apply += new System.EventHandler(this.fontDialog1_Apply);
             // 
+            // btnSaveFileDialog
+            // 
+            this.btnSaveFileDialog.Location = new System.Drawing.Point(624, 369);
+            this.btnSaveFileDialog.Name = "btnSaveFileDialog";
+            this.btnSaveFileDialog.Size = new System.Drawing.Size(140, 65);
+            this.btnSaveFileDialog.TabIndex = 5;
+            this.btnSaveFileDialog.Text = "Save FileDialog";
+            this.btnSaveFileDialog.UseVisualStyleBackColor = true;
+            this.btnSaveFileDialog.Click += new System.EventHandler(this.btnSaveFileDialog_Click);
+            // 
             // frmPanelAndColorDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 502);
+            this.Controls.Add(this.btnSaveFileDialog);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -168,5 +181,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Button btnSaveFileDialog;
     }
 }

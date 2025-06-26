@@ -61,5 +61,22 @@ namespace WindowsFormsApp1
             textBox1.Font = fontDialog1.Font;
             textBox1.ForeColor = fontDialog1.Color;
         }
+
+        private void btnSaveFileDialog_Click(object sender, EventArgs e)
+        {
+            // saveFileDialog1.InitialDirectory = @"C:\";
+
+            //saveFileDialog1.Title = "koko";
+
+             //saveFileDialog1.DefaultExt = "txt";
+             //saveFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            //saveFileDialog1.FilterIndex = 2;
+
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                MessageBox.Show(saveFileDialog1.FileName);
+            }
+        }
     }
 }
