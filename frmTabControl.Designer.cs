@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTabControl));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.btnEmpInfo = new System.Windows.Forms.Button();
@@ -96,6 +98,9 @@
             this.lblAge = new System.Windows.Forms.Label();
             this.picEmployeePhoto = new System.Windows.Forms.PictureBox();
             this.btnBrowseImage = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.pbRemove = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -107,6 +112,7 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEmployeePhoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRemove)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -380,6 +386,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.pbRemove);
             this.tabPage3.Controls.Add(this.lblAge);
             this.tabPage3.Controls.Add(this.label16);
             this.tabPage3.Controls.Add(this.pictureBox2);
@@ -423,7 +430,7 @@
             // 
             this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemove.Location = new System.Drawing.Point(396, 186);
+            this.btnRemove.Location = new System.Drawing.Point(370, 227);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(190, 71);
             this.btnRemove.TabIndex = 18;
@@ -703,9 +710,11 @@
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
+            this.listView1.LargeImageList = this.imageList1;
             this.listView1.Location = new System.Drawing.Point(-4, 78);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(1220, 379);
+            this.listView1.SmallImageList = this.imageList2;
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -714,7 +723,7 @@
             // clmnID
             // 
             this.clmnID.Text = "ID";
-            this.clmnID.Width = 45;
+            this.clmnID.Width = 55;
             // 
             // clmnFullName
             // 
@@ -808,12 +817,14 @@
             // 
             // picEmployeePhoto
             // 
+            this.picEmployeePhoto.Image = global::WindowsFormsApp1.Properties.Resources.question_mark_96;
             this.picEmployeePhoto.Location = new System.Drawing.Point(950, 81);
             this.picEmployeePhoto.Name = "picEmployeePhoto";
             this.picEmployeePhoto.Size = new System.Drawing.Size(196, 143);
             this.picEmployeePhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picEmployeePhoto.TabIndex = 19;
             this.picEmployeePhoto.TabStop = false;
+            this.picEmployeePhoto.Click += new System.EventHandler(this.picEmployeePhoto_Click);
             // 
             // btnBrowseImage
             // 
@@ -825,6 +836,33 @@
             this.btnBrowseImage.Text = "Browse Image";
             this.btnBrowseImage.UseVisualStyleBackColor = true;
             this.btnBrowseImage.Click += new System.EventHandler(this.btnBrowseImage_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "Boy.jpg");
+            this.imageList1.Images.SetKeyName(1, "girl.png");
+            this.imageList1.Images.SetKeyName(2, "Man.png");
+            this.imageList1.Images.SetKeyName(3, "Woman.jpg");
+            // 
+            // imageList2
+            // 
+            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList2.Images.SetKeyName(0, "Boy.jpg");
+            this.imageList2.Images.SetKeyName(1, "girl.png");
+            this.imageList2.Images.SetKeyName(2, "Man.png");
+            this.imageList2.Images.SetKeyName(3, "Woman.jpg");
+            // 
+            // pbRemove
+            // 
+            this.pbRemove.Location = new System.Drawing.Point(370, 65);
+            this.pbRemove.Name = "pbRemove";
+            this.pbRemove.Size = new System.Drawing.Size(190, 141);
+            this.pbRemove.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbRemove.TabIndex = 22;
+            this.pbRemove.TabStop = false;
             // 
             // frmTabControl
             // 
@@ -850,6 +888,7 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEmployeePhoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRemove)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -925,5 +964,8 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button btnBrowseImage;
         private System.Windows.Forms.PictureBox picEmployeePhoto;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ImageList imageList2;
+        private System.Windows.Forms.PictureBox pbRemove;
     }
 }

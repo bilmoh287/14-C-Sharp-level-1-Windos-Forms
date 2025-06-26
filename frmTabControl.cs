@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Properties;
 
 namespace WindowsFormsApp1
 {
     public partial class frmTabControl : Form
     {
+        string selectedImagePath = "";
+
         public frmTabControl()
         {
             InitializeComponent();
@@ -56,7 +59,10 @@ namespace WindowsFormsApp1
             Item.SubItems.Add(txtDep.Text.Trim());
             Item.SubItems.Add(numericUpDown1.Value.ToString());
 
-            listView1.Items.Add(Item);
+
+
+            // 👇 Call helper method to handle image + add to ListView
+            AddEmployeeToListView(Item, ID, selectedImagePath);
 
             txtID.Clear();
             txtFullName.Clear();
@@ -65,10 +71,33 @@ namespace WindowsFormsApp1
             txtSalary.Clear();
             txtPhone.Clear();
             dateTimePicker1.Value = DateTime.Now;
+            picEmployeePhoto.Image = Resources.question_mark_96;
             numericUpDown1.Value = 18;
+
             txtID.Focus();
         }
 
+        private void AddEmployeeToListView(ListViewItem item, string id, string imagePath)
+        {
+            Image img;
+
+            if (!string.IsNullOrEmpty(imagePath) && System.IO.File.Exists(imagePath))
+                img = Image.FromFile(imagePath);
+            else
+                img = Properties.Resources.question_mark_96;
+
+            if (!imageList1.Images.ContainsKey(id))
+                imageList1.Images.Add(id, img);
+            if (!imageList2.Images.ContainsKey(id))
+                imageList2.Images.Add(id, img);
+
+            item.ImageKey = id;
+            listView1.LargeImageList = imageList1;
+            listView1.SmallImageList = imageList2;
+
+            // ✅ Fix: Clone before adding
+            listView1.Items.Add((ListViewItem)item.Clone());
+        }
 
         private bool IsDuplicateID(string ID)
         {
@@ -91,8 +120,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Employee removed successfully.", "Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Clear labels if not found
-                lblName.Text = lblGender.Text = lblDep.Text = lblJob.Text =
-                lblSalary.Text = lblDate.Text = lblPhone.Text = lblAge.Text = "";
+                ClearLabels();
 
                 txtFindID.Clear();
                 txtFindID.Focus();
@@ -107,30 +135,56 @@ namespace WindowsFormsApp1
         {
             string ID = txtFindID.Text.Trim();
 
-            if(listView1.Items.Count == 0)
+            if (listView1.Items.Count == 0 || string.IsNullOrEmpty(ID))
             {
+                ClearLabels();
+                pbRemove.Image = Properties.Resources.question_mark_96;
                 return;
             }
 
-            ListViewItem Item = listView1.FindItemWithText(ID, false, 0, true);
+            ListViewItem item = listView1.FindItemWithText(ID, false, 0, true);
 
-            if(Item != null)
+            if (item != null)
             {
-                lblName.Text = Item.SubItems[1].Text;
-                lblGender.Text = Item.SubItems[2].Text;
-                lblDep.Text = Item.SubItems[7].Text;
-                lblJob.Text = Item.SubItems[3].Text;
-                lblSalary.Text = Item.SubItems[4].Text;
-                lblDate.Text = Item.SubItems[5].Text;
-                lblPhone.Text = Item.SubItems[6].Text;
-                lblAge.Text = Item.SubItems[8].Text;    
+                lblName.Text = item.SubItems[1].Text;
+                lblGender.Text = item.SubItems[2].Text;
+                lblDep.Text = item.SubItems[7].Text;
+                lblJob.Text = item.SubItems[3].Text;
+                lblSalary.Text = item.SubItems[4].Text;
+                lblDate.Text = item.SubItems[5].Text;
+                lblPhone.Text = item.SubItems[6].Text;
+                lblAge.Text = item.SubItems[8].Text;
+
+
+                // Try to get image by ImageKey (ID) first (for manually added employees)
+                if (imageList1.Images.ContainsKey(ID))
+                {
+                    pbRemove.Image = imageList1.Images[ID];
+                }
+                // If not found by key, try to get image by ImageIndex (for randomly filled employees)
+                else if (item.ImageIndex >= 0 && item.ImageIndex < imageList1.Images.Count)
+                {
+                    pbRemove.Image = imageList1.Images[item.ImageIndex];
+                }
+                else
+                {
+                    // Fallback to question mark if image not found by key or index
+                    pbRemove.Image = Properties.Resources.question_mark_96;
+                }
+
             }
             else
             {
-                // Clear labels if not found
-                lblName.Text = lblGender.Text = lblDep.Text = lblJob.Text =
-                lblSalary.Text = lblDate.Text = lblPhone.Text = lblAge.Text = "";
+                ClearLabels();
+                pbRemove.Image = Properties.Resources.question_mark_96;
             }
+
+        }
+
+        private void ClearLabels()
+        {
+            lblName.Text = lblGender.Text = lblDep.Text = lblJob.Text =
+            lblSalary.Text = lblDate.Text = lblPhone.Text = lblAge.Text = "";
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -170,29 +224,34 @@ namespace WindowsFormsApp1
 
         private void btnFillRandom_Click(object sender, EventArgs e)
         {
+            int age = 18;
+
             for (int i = 1; i <= 10; i++)
             {
-                ListViewItem Item = new ListViewItem(i.ToString());
+                ListViewItem item = new ListViewItem(i.ToString());
+                item.SubItems.Add("Person" + i);
 
-                //if (i % 2 == 0)
-                //    Item.ImageIndex = 1;
-                //else
-                //    Item.ImageIndex = 0;
+                string gender = i % 2 == 0 ? "Female" : "Male";
+                item.SubItems.Add(gender);
 
-                Item.SubItems.Add("Person" + i);
+                item.SubItems.Add("Not Yet"); // Job
+                item.SubItems.Add("0000");    // Salary
+                item.SubItems.Add(DateTime.Now.ToShortDateString()); // Hire Date
+                item.SubItems.Add("09000000" + i); // Phone
+                item.SubItems.Add("Unknown"); // Department
+                item.SubItems.Add(age.ToString()); // Age
 
-                if (i % 2 == 0)
-                    Item.SubItems.Add("Male");
+                // Assign image index
+                if (gender == "Male")
+                    item.ImageIndex = age <= 21 ? 0 : 2; // 0 = boy, 2 = man
                 else
-                    Item.SubItems.Add("Femle");
+                    item.ImageIndex = age <= 21 ? 1 : 3; // 1 = girl, 3 = woman
 
-                Item.SubItems.Add("Not Yet");
-                Item.SubItems.Add("0000");
-                Item.SubItems.Add(dateTimePicker1.Value.ToString());
-                Item.SubItems.Add("09000000" + i);
-                Item.SubItems.Add("Uknown");
+                listView1.LargeImageList = imageList1;
+                listView1.SmallImageList = imageList2;
+                listView1.Items.Add(item);
 
-                listView1.Items.Add(Item);
+                age++; // Increase age each loop
             }
         }
 
@@ -206,9 +265,14 @@ namespace WindowsFormsApp1
             {
                 picEmployeePhoto.Image = Image.FromFile(openFile.FileName);
 
-                // Optional: store the path for saving or loading later
-                //lblImagePath.Text = openFile.FileName; // (you can use a hidden label or a variable)
+                // ✅ Store the path for later use when adding the employee
+               selectedImagePath = openFile.FileName;
             }
+        }
+
+        private void picEmployeePhoto_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
