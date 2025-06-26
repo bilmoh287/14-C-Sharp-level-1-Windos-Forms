@@ -139,7 +139,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1223, 460);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Home Page";
+            this.tabPage1.Text = "🏠Home Page";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // btnEmpInfo
@@ -203,7 +203,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1223, 460);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Add Employee";
+            this.tabPage2.Text = "➕Add Employee";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // btnBrowseImage
@@ -447,7 +447,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(1223, 460);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Remove Employee";
+            this.tabPage3.Text = "🚮Remove Employee";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // pbRemove
@@ -678,7 +678,7 @@
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(1223, 460);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Employee Info";
+            this.tabPage4.Text = "ℹ️Employee Info";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // groupBox2
@@ -869,6 +869,7 @@
             this.ClientSize = new System.Drawing.Size(1284, 634);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmEmployeeManagementSystem";
             this.Text = "Employee Management System";
             this.tabControl1.ResumeLayout(false);
