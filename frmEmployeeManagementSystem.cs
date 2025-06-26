@@ -11,11 +11,11 @@ using WindowsFormsApp1.Properties;
 
 namespace WindowsFormsApp1
 {
-    public partial class frmTabControl : Form
+    public partial class frmEmployeeManagementSystem : Form
     {
         string selectedImagePath = "";
 
-        public frmTabControl()
+        public frmEmployeeManagementSystem()
         {
             InitializeComponent();
         }
@@ -156,7 +156,7 @@ namespace WindowsFormsApp1
                 lblAge.Text = item.SubItems[8].Text;
 
 
-                // Try to get image by ImageKey (ID) first (for manually added employees)
+                // Try to get image by ImageKey &(ID) first (for manually added employees)
                 if (imageList1.Images.ContainsKey(ID))
                 {
                     pbRemove.Image = imageList1.Images[ID];
@@ -187,39 +187,29 @@ namespace WindowsFormsApp1
             lblSalary.Text = lblDate.Text = lblPhone.Text = lblAge.Text = "";
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void rbDetail_CheckedChanged(object sender, EventArgs e)
         {
             listView1.View = View.Details;
-
         }
 
         private void btnSmallIcon_CheckedChanged(object sender, EventArgs e)
         {
             listView1.View = View.SmallIcon;
-
         }
 
         private void btnTile_CheckedChanged(object sender, EventArgs e)
         {
             listView1.View = View.Tile;
-
         }
 
         private void btnList_CheckedChanged(object sender, EventArgs e)
         {
             listView1.View = View.LargeIcon;
-
         }
 
         private void btnLargeIcon_CheckedChanged(object sender, EventArgs e)
         {
             listView1.View = View.List;
-
         }
 
         private void btnFillRandom_Click(object sender, EventArgs e)
@@ -270,9 +260,5 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void picEmployeePhoto_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

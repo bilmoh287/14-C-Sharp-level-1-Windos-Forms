@@ -1,6 +1,6 @@
 ﻿ namespace WindowsFormsApp1
 {
-    partial class frmTabControl
+    partial class frmEmployeeManagementSystem
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTabControl));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEmployeeManagementSystem));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.btnEmpInfo = new System.Windows.Forms.Button();
             this.btnAddEmp = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnBrowseImage = new System.Windows.Forms.Button();
+            this.picEmployeePhoto = new System.Windows.Forms.PictureBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.btnFillRandom = new System.Windows.Forms.Button();
             this.txtPhone = new System.Windows.Forms.MaskedTextBox();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -56,6 +59,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.pbRemove = new System.Windows.Forms.PictureBox();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnRemove = new System.Windows.Forms.Button();
             this.txtFindID = new System.Windows.Forms.TextBox();
@@ -91,28 +97,22 @@
             this.clmnDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmnPhone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmnDep = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label9 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.clmnAge = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label16 = new System.Windows.Forms.Label();
-            this.lblAge = new System.Windows.Forms.Label();
-            this.picEmployeePhoto = new System.Windows.Forms.PictureBox();
-            this.btnBrowseImage = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.pbRemove = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picEmployeePhoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRemove)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEmployeePhoto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRemove)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -205,6 +205,40 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Add Employee";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // btnBrowseImage
+            // 
+            this.btnBrowseImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBrowseImage.Location = new System.Drawing.Point(964, 240);
+            this.btnBrowseImage.Name = "btnBrowseImage";
+            this.btnBrowseImage.Size = new System.Drawing.Size(172, 45);
+            this.btnBrowseImage.TabIndex = 20;
+            this.btnBrowseImage.Text = "Browse Image";
+            this.btnBrowseImage.UseVisualStyleBackColor = true;
+            this.btnBrowseImage.Click += new System.EventHandler(this.btnBrowseImage_Click);
+            // 
+            // picEmployeePhoto
+            // 
+            this.picEmployeePhoto.Image = global::WindowsFormsApp1.Properties.Resources.question_mark_96;
+            this.picEmployeePhoto.Location = new System.Drawing.Point(950, 81);
+            this.picEmployeePhoto.Name = "picEmployeePhoto";
+            this.picEmployeePhoto.Size = new System.Drawing.Size(196, 143);
+            this.picEmployeePhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picEmployeePhoto.TabIndex = 19;
+            this.picEmployeePhoto.TabStop = false;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown1.Location = new System.Drawing.Point(39, 293);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 30);
+            this.numericUpDown1.TabIndex = 18;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            18,
+            0,
+            0,
+            0});
             // 
             // btnFillRandom
             // 
@@ -415,6 +449,35 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Remove Employee";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // pbRemove
+            // 
+            this.pbRemove.Location = new System.Drawing.Point(370, 65);
+            this.pbRemove.Name = "pbRemove";
+            this.pbRemove.Size = new System.Drawing.Size(190, 141);
+            this.pbRemove.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbRemove.TabIndex = 22;
+            this.pbRemove.TabStop = false;
+            // 
+            // lblAge
+            // 
+            this.lblAge.AutoSize = true;
+            this.lblAge.BackColor = System.Drawing.Color.MistyRose;
+            this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAge.Location = new System.Drawing.Point(93, 139);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(0, 25);
+            this.lblAge.TabIndex = 21;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(33, 139);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(54, 25);
+            this.label16.TabIndex = 20;
+            this.label16.Text = "Age:";
             // 
             // pictureBox2
             // 
@@ -718,7 +781,6 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // clmnID
             // 
@@ -764,78 +826,11 @@
             this.clmnDep.Text = "Departmnet";
             this.clmnDep.Width = 100;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.AliceBlue;
-            this.label9.Font = new System.Drawing.Font("Stencil", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Brown;
-            this.label9.Location = new System.Drawing.Point(298, 45);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(601, 44);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Employee Management System";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(39, 293);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 30);
-            this.numericUpDown1.TabIndex = 18;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            18,
-            0,
-            0,
-            0});
-            // 
             // clmnAge
             // 
             this.clmnAge.DisplayIndex = 3;
             this.clmnAge.Text = "Age";
             this.clmnAge.Width = 45;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(33, 139);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(54, 25);
-            this.label16.TabIndex = 20;
-            this.label16.Text = "Age:";
-            // 
-            // lblAge
-            // 
-            this.lblAge.AutoSize = true;
-            this.lblAge.BackColor = System.Drawing.Color.MistyRose;
-            this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAge.Location = new System.Drawing.Point(93, 139);
-            this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(0, 25);
-            this.lblAge.TabIndex = 21;
-            // 
-            // picEmployeePhoto
-            // 
-            this.picEmployeePhoto.Image = global::WindowsFormsApp1.Properties.Resources.question_mark_96;
-            this.picEmployeePhoto.Location = new System.Drawing.Point(950, 81);
-            this.picEmployeePhoto.Name = "picEmployeePhoto";
-            this.picEmployeePhoto.Size = new System.Drawing.Size(196, 143);
-            this.picEmployeePhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picEmployeePhoto.TabIndex = 19;
-            this.picEmployeePhoto.TabStop = false;
-            this.picEmployeePhoto.Click += new System.EventHandler(this.picEmployeePhoto_Click);
-            // 
-            // btnBrowseImage
-            // 
-            this.btnBrowseImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBrowseImage.Location = new System.Drawing.Point(964, 240);
-            this.btnBrowseImage.Name = "btnBrowseImage";
-            this.btnBrowseImage.Size = new System.Drawing.Size(172, 45);
-            this.btnBrowseImage.TabIndex = 20;
-            this.btnBrowseImage.Text = "Browse Image";
-            this.btnBrowseImage.UseVisualStyleBackColor = true;
-            this.btnBrowseImage.Click += new System.EventHandler(this.btnBrowseImage_Click);
             // 
             // imageList1
             // 
@@ -855,40 +850,43 @@
             this.imageList2.Images.SetKeyName(2, "Man.png");
             this.imageList2.Images.SetKeyName(3, "Woman.jpg");
             // 
-            // pbRemove
+            // label9
             // 
-            this.pbRemove.Location = new System.Drawing.Point(370, 65);
-            this.pbRemove.Name = "pbRemove";
-            this.pbRemove.Size = new System.Drawing.Size(190, 141);
-            this.pbRemove.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbRemove.TabIndex = 22;
-            this.pbRemove.TabStop = false;
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.AliceBlue;
+            this.label9.Font = new System.Drawing.Font("Stencil", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Brown;
+            this.label9.Location = new System.Drawing.Point(298, 45);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(601, 44);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Employee Management System";
             // 
-            // frmTabControl
+            // frmEmployeeManagementSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1284, 634);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.tabControl1);
-            this.Name = "frmTabControl";
-            this.Text = "frmTabControl";
+            this.Name = "frmEmployeeManagementSystem";
+            this.Text = "Employee Management System";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picEmployeePhoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRemove)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEmployeePhoto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRemove)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

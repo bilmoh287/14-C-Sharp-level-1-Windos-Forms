@@ -48,6 +48,7 @@
             this.btnErrorProvider = new System.Windows.Forms.Button();
             this.btnTrackBar = new System.Windows.Forms.Button();
             this.btnNumeric = new System.Windows.Forms.Button();
+            this.btnEmpMgSys = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowPart1
@@ -250,11 +251,22 @@
             this.btnNumeric.UseVisualStyleBackColor = true;
             this.btnNumeric.Click += new System.EventHandler(this.btnNumeric_Click);
             // 
+            // btnEmpMgSys
+            // 
+            this.btnEmpMgSys.Location = new System.Drawing.Point(488, 404);
+            this.btnEmpMgSys.Name = "btnEmpMgSys";
+            this.btnEmpMgSys.Size = new System.Drawing.Size(159, 105);
+            this.btnEmpMgSys.TabIndex = 20;
+            this.btnEmpMgSys.Text = "Employee Management System";
+            this.btnEmpMgSys.UseVisualStyleBackColor = true;
+            this.btnEmpMgSys.Click += new System.EventHandler(this.btnEmpMgSys_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1056, 562);
+            this.Controls.Add(this.btnEmpMgSys);
             this.Controls.Add(this.btnNumeric);
             this.Controls.Add(this.btnTrackBar);
             this.Controls.Add(this.btnErrorProvider);
@@ -304,5 +316,6 @@
         private System.Windows.Forms.Button btnErrorProvider;
         private System.Windows.Forms.Button btnTrackBar;
         private System.Windows.Forms.Button btnNumeric;
+        private System.Windows.Forms.Button btnEmpMgSys;
     }
 }

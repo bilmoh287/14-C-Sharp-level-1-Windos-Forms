@@ -154,11 +154,11 @@
     <Compile Include="frmProgressBar.Designer.cs">
       <DependentUpon>frmProgressBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmTabControl.cs">
+    <Compile Include="frmEmployeeManagementSystem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmTabControl.Designer.cs">
-      <DependentUpon>frmTabControl.cs</DependentUpon>
+    <Compile Include="frmEmployeeManagementSystem.Designer.cs">
+      <DependentUpon>frmEmployeeManagementSystem.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTicTacToeGame.cs">
       <SubType>Form</SubType>
@@ -240,8 +240,8 @@
     <EmbeddedResource Include="frmProgressBar.resx">
       <DependentUpon>frmProgressBar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmTabControl.resx">
-      <DependentUpon>frmTabControl.cs</DependentUpon>
+    <EmbeddedResource Include="frmEmployeeManagementSystem.resx">
+      <DependentUpon>frmEmployeeManagementSystem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTicTacToeGame.resx">
       <DependentUpon>frmTicTacToeGame.cs</DependentUpon>
