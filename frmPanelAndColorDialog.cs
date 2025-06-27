@@ -78,5 +78,34 @@ namespace WindowsFormsApp1
                 MessageBox.Show(saveFileDialog1.FileName);
             }
         }
+
+        private void btnOpenFileDialog_Click(object sender, EventArgs e)
+        {
+             openFileDialog1.InitialDirectory = @"C:\";
+
+            //saveFileDialog1.Title = "koko";
+
+            openFileDialog1.DefaultExt = "txt";
+            openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            //saveFileDialog1.FilterIndex = 2;
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                MessageBox.Show(openFileDialog1.FileName);
+            }
+        }
+
+        private void btnOpenFileDialogMulti_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Multiselect = true;
+
+            if(openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                foreach (string file in openFileDialog1.FileNames)
+                {
+                    MessageBox.Show(file);
+                }
+            }
+        }
     }
 }
