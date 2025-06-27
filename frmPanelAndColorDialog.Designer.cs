@@ -45,6 +45,8 @@
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.btnOpenFileDialog = new System.Windows.Forms.Button();
             this.btnOpenFileDialogMulti = new System.Windows.Forms.Button();
+            this.btnFolderBrowseDialog = new System.Windows.Forms.Button();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -179,11 +181,22 @@
             this.btnOpenFileDialogMulti.UseVisualStyleBackColor = true;
             this.btnOpenFileDialogMulti.Click += new System.EventHandler(this.btnOpenFileDialogMulti_Click);
             // 
+            // btnFolderBrowseDialog
+            // 
+            this.btnFolderBrowseDialog.Location = new System.Drawing.Point(539, 336);
+            this.btnFolderBrowseDialog.Name = "btnFolderBrowseDialog";
+            this.btnFolderBrowseDialog.Size = new System.Drawing.Size(212, 39);
+            this.btnFolderBrowseDialog.TabIndex = 8;
+            this.btnFolderBrowseDialog.Text = "Folder BrowseDialog";
+            this.btnFolderBrowseDialog.UseVisualStyleBackColor = true;
+            this.btnFolderBrowseDialog.Click += new System.EventHandler(this.btnFolderBrowseDialog_Click);
+            // 
             // frmPanelAndColorDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 502);
+            this.Controls.Add(this.btnFolderBrowseDialog);
             this.Controls.Add(this.btnOpenFileDialogMulti);
             this.Controls.Add(this.btnOpenFileDialog);
             this.Controls.Add(this.btnSaveFileDialog);
@@ -221,5 +234,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
         private System.Windows.Forms.Button btnOpenFileDialog;
         private System.Windows.Forms.Button btnOpenFileDialogMulti;
+        private System.Windows.Forms.Button btnFolderBrowseDialog;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }

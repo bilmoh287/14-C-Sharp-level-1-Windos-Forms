@@ -107,5 +107,14 @@ namespace WindowsFormsApp1
                 }
             }
         }
+
+        private void btnFolderBrowseDialog_Click(object sender, EventArgs e)
+        {
+            folderBrowserDialog1.ShowNewFolderButton = true;
+            if(folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                MessageBox.Show(folderBrowserDialog1.SelectedPath);
+            }
+        }
     }
 }
